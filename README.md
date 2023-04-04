@@ -9,4 +9,4 @@ En este Modelo podes realizar la carga de un Nombre, Apellido y fecha de nacimie
 Para la busqueda deberas ingresar a personas/lista y ahi te aparecera para ir buscando a la persona que quieras, puede ser por nombre completo o por las iniciales
 
 ## Modelo 3 Juegos
-En este Modelo se puede realizar la carga de un juego junto con la descripcion del mismo, se ingresa mediante /juegos/ y para la busqueda en la base de datos se ingresa mediante !ªw/juegos/lista
+En este Modelo se puede realizar la carga de un juego junto con la descripcion del mismo, se ingresa mediante /juegos/ y para la busqueda en la base de datos se ingresa mediante /juegos/lista
