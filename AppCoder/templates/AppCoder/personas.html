@@ -1,0 +1,20 @@
+{% extends "AppCoder/base.html" %}
+{% block titulo %} Listado de Personas:  {{total_personas}} {% endblock %}
+{% block base %}
+    
+<form action="{% url 'personas-create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+
+<ul>
+    {% for personas in persona %}
+        <li>{{personas}}</li>
+    {% endfor %}
+
+</ul>   
+
+{% endblock %}
+
+{% block title %} Personas {% endblock %}

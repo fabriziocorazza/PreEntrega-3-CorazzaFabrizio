@@ -1,0 +1,20 @@
+{% extends "AppCoder/base.html" %}
+{% block titulo %} Listado de Juegos recomendados:  {{total_juegos}} {% endblock %}
+{% block base %}
+    
+<form action="{% url 'juegos-create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+
+<ul>
+    {% for juego in juegos %}
+        <li>{{juego}}</li>
+    {% endfor %}
+
+</ul>   
+
+{% endblock %}
+
+{% block title %} Juegos {% endblock %}

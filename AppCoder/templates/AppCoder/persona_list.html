@@ -1,0 +1,23 @@
+{% extends "AppCoder/base.html" %}
+{% block titulo %} Listado de Personas:  {{total_personas}} {% endblock %}
+{% block base %}
+
+<form>
+    <p>
+    <label for="criterio_nombre">Criterio de Busqueda:</label>
+    <input type="text" name="criterio_nombre" maxlength="100" required="" id="criterio_nombre">
+    </p>
+    <p>
+    <input type="submit" value="Agregar">
+    </p>
+</form>
+
+<ul>
+    {% for personas in persona %}
+        <li>{{personas}}</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
+
+{% block title %} Personas {% endblock %}
